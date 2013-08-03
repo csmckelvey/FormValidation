@@ -1,7 +1,7 @@
-FormValidation
-==============
-Charles McKelvey
-================
+  FormValidation
+==================
+ Charles McKelvey
+==================
 
 HTML/CSS form using javascript for interactive form validation. PHP is used as a backup.
 
