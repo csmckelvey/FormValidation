@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Form Validation | CSMcKelvey</title>
+	<link rel="stylesheet" type="text/css" href="validator.css">
+	<script src="validator.js"></script>
+	<noscript>You really should turn on Javascript dawg. It makes the web better and shit.</noscript>
+</head>
+<body>
+<div id="wrapper">
+
+<div id="firstName" class="formBar">
+	First Name <input type="text" id="firstNameInput" class="textInput" onfocus="NameFocus()" onblur="NameBlur(this)" />
+        <img src="icon_BLANK.png" class="iconImage" id="firstNameIcon" alt="pic" />
+</div>
+
+<div id="lastName" class="formBar">
+   	Last Name <input type="text" id="lastNameInput" class="textInput" onfocus="NameFocus()" onblur="NameBlur(this)" />
+        <img src="icon_BLANK.png" class="iconImage" id="lastNameIcon" alt="pic" />
+</div>
+
+<div id="email" class="formBar">
+    	Email <input type="email" id="emailInput" class="textInput" onfocus="EmailFocus()" onblur="EmailBlur()" />
+        <img src="icon_BLANK.png" class="iconImage" id="emailIcon" alt="pic" />
+</div>
+
+<div id="cellPhone" class="formBar">
+    	Cell Phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	(<input type="text" id="cellPhoneInput1" class="phoneInput" maxlength="3" onfocus="NumberFocus(1)" onblur="NumberBlur(1)" onkeyup="checkLength(this)" />)
+        <input type="text" id="cellPhoneInput2" class="phoneInput" maxlength="3" onfocus="NumberFocus(1)" onblur="NumberBlur(1)" onkeyup="checkLength(this)" /> - 
+        <input type="text" id="cellPhoneInput3" class="phoneInput" maxlength="4" onfocus="NumberFocus(1)" onblur="NumberBlur(1)" onkeyup="checkLength(this)" />
+        <img src="icon_BLANK.png" class="iconImage" id="cellPhoneIcon" alt="pic" />
+</div>
+
+<div id="homePhone" class="formBar">
+    	Home Phone &nbsp;&nbsp; 
+	(<input type="text" id="homePhoneInput1" class="phoneInput" maxlength="3" onfocus="NumberFocus(2)" onblur="NumberBlur(2)" onkeyup="checkLength(this)" />)
+        <input type="text" id="homePhoneInput2" class="phoneInput" maxlength="3" onfocus="NumberFocus(2)" onblur="NumberBlur(2)" onkeyup="checkLength(this)" /> - 
+	<input type="text" id="homePhoneInput3" class="phoneInput" maxlength="4" onfocus="NumberFocus(2)" onblur="NumberBlur(2)" onkeyup="checkLength(this)" />
+        <img src="icon_BLANK.png" class="iconImage" id="homePhoneIcon" alt="pic" />
+</div>
+
+<div id="password" class="formBar">
+    	Password <input type="password" id="passwordInput" class="textInput" maxlength="14" onfocus="passwordFocus()" onkeyup="ValidatePassword(this)" />
+        <img src="icon_BLANK.png" class="iconImage" id="passwordIcon" alt="pic" />
+</div>
+
+<div id="passwordConfirm" class="formBar">
+    	Password <input type="password" id="passwordConfirmInput" class="textInput" maxlength="14" onfocus="passwordFocus()" onkeyup="ValidatePassword(this)" />
+        <img src="icon_BLANK.png" class="iconImage" id="passwordConfirmIcon" alt="pic" />
+</div>
+
+<div id="comment" class="formBar">
+    	Comments<br />
+        <textarea id="commentInput" onfocus="commentFocus()" onblur="commentBlur()"></textarea>
+</div>
+
+<button id="submitButton" onclick="validateClick()">Validate</button>
+
+<div id="outputConsole">
+    <ul>
+        <li>Your first and last names are always nice to have.</li>
+        <li>Email is our main method of communication with you and it also doubles as an easy to remember username.</li>
+        <li>Phone numbers are used for urgent communication needs. For instance, if a bank detects that your debit card is being used unlawfully, they will want to contact you directly as soon as possible.</li>
+        <li>Passwords must be 8-32 characters long.</li>
+        <li>Finally, let us know what you think!</li>
+    </ul>
+
+</div>
+
+</div>
+</body>
+</html>

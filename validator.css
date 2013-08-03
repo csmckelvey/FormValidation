@@ -1,0 +1,134 @@
+body {
+	font-size: 1.5em;
+        background-color: #FAFAFA;
+}
+
+textarea {
+        margin-top: 5px;
+        border-top: solid 2px #000000;
+        border-bottom: solid 2px #000000;
+        border-right: none;
+        border-left: none;
+        width: 410px;
+        padding-left: 10px;
+        padding-right: 10px;
+        min-height: 150px;
+        outline: none;
+	border-radius: 10px;
+        opacity: 0.8;
+}
+textarea:focus { background-color: #F9F9F9; }
+
+li {
+    padding-top: 25px;
+}
+
+#wrapper {
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 20px;
+	width: 800px;
+        margin: auto;
+        border-right: solid 2px #000000;
+        border-left: solid 2px #000000;
+        background-color: #FFFFFF;
+	border-radius: 10px;
+}
+
+#homePhoneInput3 { width: 50px; }
+
+#cellPhoneInput3 { width: 50px; }
+
+#comment {
+        text-align: center;
+        padding-left: 0;
+}
+
+#lastNameInput { margin-left: 13px; }
+
+#emailInput { margin-left: 60px; }
+
+#passwordInput, #passwordConfirmInput { margin-left: 30px; }
+
+#submitButton {
+        width: 150px;
+        margin-left: 150px;
+        padding: 10px;
+        font-weight: bold;
+        background-color: #E5E5E5;
+        border-left: solid 2px #000000;
+        border-right: solid 2px #000000;
+        border-top: none;
+        border-bottom: none;
+        font-size: 0.8em;
+	border-radius: 15px;
+}
+#submitButton:hover {
+        background-color: #0000FF;
+        color: #FFFFFF;
+        border-left: solid 5px #000000;
+        border-right: solid 5px #000000;
+        cursor: pointer;
+}
+
+#outputConsole {   
+        position: absolute;
+        top: 30px;
+        left: 470px;
+        width: 300px;
+        text-align: center;
+        font-size: 0.75em;
+        color: #0000DD;
+}
+
+#reqList { text-align: left; }
+
+#pwdReq1 { padding-top: 0; }
+
+.phoneInput {
+        padding-left: 15px;
+        padding-right: 10px;
+        font-size: 0.8em;
+        outline: none;
+        width: 40px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid 2px #000000;
+        border-radius: 10px;
+	opacity: 0.5;
+}
+
+.textInput { 
+        width: 250px;
+        background-color: #FFFFFF; 
+        vertical-align: top;
+        border-bottom: solid 2px #000000;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        margin-left: 10px;
+        outline: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 0.8em;
+	border-radius: 10px;
+        opacity: 0.5;
+}
+.textInput:focus, .phoneInput:focus { 
+	background-color: #F9F9F9; 
+	opacity: 1.0;
+}
+
+.formBar {
+        width: 450px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        margin-top: 15px;
+}
+
+.iconImage {
+        padding-left: 10px;
+	vertical-align: middle;
+        width: 25px;
+}
