@@ -61,7 +61,7 @@ function NumberFocus(obj) {
 		myConsole.innerHTML = 'Please enter a valid phone number.';  
 	}
 	else {
-		myConsole.innerHTML = 'Phone Numbers are used for urgent communication needs.<br />For instance, if a bank detects that your debit card is \
+		myConsole.innerHTML = 'Phone numbers are used for urgent communication needs.<br />For instance, if a bank detects that your debit card is \
 		                       being used unlawfully, they will want to contact you directly as soon as possible.';  
 	}
 	myConsole.style.top = consolePadding;
@@ -236,7 +236,7 @@ console.log('ValidateClick()');
 	if ('GO.png' != icon6.src.substr(-6)) { console.log('\tPassword:\t\t NOGO'); feedback += 'There\'s something wrong with your password.<br />'; } else { console.log('\tPassword:\t\t GO'); }
 	if ('GO.png' != icon7.src.substr(-6)) { console.log('\tPasswordConfirm: NOGO'); feedback += 'There\'s something wrong with your password confirmation.<br />'; } else { console.log('\tPasswordConfirm: GO'); }
 
-	if ('' == feedback) {  console.log('ValidateClick() - Feedback was empty so all had GO so form is validated.'); feedback = 'Everything Loooks Good!'; }
+	if ('' == feedback) {  console.log('ValidateClick() - Feedback was empty so all had GO so form is validated.'); feedback = 'Everything Looks Good!'; }
 	myConsole.innerHTML = feedback;
 }
 
