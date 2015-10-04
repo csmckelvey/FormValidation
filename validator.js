@@ -219,6 +219,8 @@ function ValidatePassword(obj) {
 //Checks each icon and tells the user what, if anything, needs to be fixed in the form.
 function validateClick() {
 console.log('ValidateClick()');
+	var substringOffset = -6;
+	var imageName = "GO.png";
 	var icon1 = document.getElementById('firstNameIcon');
 	var icon2 = document.getElementById('lastNameIcon');
 	var icon3 = document.getElementById('emailIcon');
@@ -228,13 +230,13 @@ console.log('ValidateClick()');
 	var icon7 = document.getElementById('passwordConfirmIcon');
 	var feedback = '';
 
-	if ('GO.png' != icon1.src.substr(-6)) { console.log('\tFirstName:\t\t NOGO'); feedback += 'There\'s something wrong with your first name.<br />'; } else { console.log('\tFirstName:\t\t GO'); }
-	if ('GO.png' != icon2.src.substr(-6)) { console.log('\tLastName:\t\t NOGO'); feedback += 'There\'s something wrong with your last name.<br />'; } else { console.log('\tLastName:\t\t GO'); }
-	if ('GO.png' != icon3.src.substr(-6)) { console.log('\tEmail:\t\t\t NOGO'); feedback += 'There\'s something wrong with your email address.<br />'; } else { console.log('\tEmail:\t\t\t GO'); }
-	if ('GO.png' != icon4.src.substr(-6)) { console.log('\tCellPhone:\t\t NOGO'); feedback += 'There\'s something wrong with your cell number.<br />'; } else { console.log('\tCellPhone:\t\t GO'); }
-	if ('GO.png' != icon5.src.substr(-6)) { console.log('\tHomePhone:\t\t NOGO'); feedback += 'There\'s something wrong with your home number.<br />'; } else { console.log('\tHomePhone:\t\t GO'); }
-	if ('GO.png' != icon6.src.substr(-6)) { console.log('\tPassword:\t\t NOGO'); feedback += 'There\'s something wrong with your password.<br />'; } else { console.log('\tPassword:\t\t GO'); }
-	if ('GO.png' != icon7.src.substr(-6)) { console.log('\tPasswordConfirm: NOGO'); feedback += 'There\'s something wrong with your password confirmation.<br />'; } else { console.log('\tPasswordConfirm: GO'); }
+	if (imageName != icon1.src.substr(substringOffset)) { console.log('\tFirstName:\t\t NOGO'); feedback += 'There\'s something wrong with your first name.<br />'; } else { console.log('\tFirstName:\t\t GO'); }
+	if (imageName != icon2.src.substr(substringOffset)) { console.log('\tLastName:\t\t NOGO'); feedback += 'There\'s something wrong with your last name.<br />'; } else { console.log('\tLastName:\t\t GO'); }
+	if (imageName != icon3.src.substr(substringOffset)) { console.log('\tEmail:\t\t\t NOGO'); feedback += 'There\'s something wrong with your email address.<br />'; } else { console.log('\tEmail:\t\t\t GO'); }
+	if (imageName != icon4.src.substr(substringOffset)) { console.log('\tCellPhone:\t\t NOGO'); feedback += 'There\'s something wrong with your cell number.<br />'; } else { console.log('\tCellPhone:\t\t GO'); }
+	if (imageName != icon5.src.substr(substringOffset)) { console.log('\tHomePhone:\t\t NOGO'); feedback += 'There\'s something wrong with your home number.<br />'; } else { console.log('\tHomePhone:\t\t GO'); }
+	if (imageName != icon6.src.substr(substringOffset)) { console.log('\tPassword:\t\t NOGO'); feedback += 'There\'s something wrong with your password.<br />'; } else { console.log('\tPassword:\t\t GO'); }
+	if (imageName != icon7.src.substr(substringOffset)) { console.log('\tPasswordConfirm: NOGO'); feedback += 'There\'s something wrong with your password confirmation.<br />'; } else { console.log('\tPasswordConfirm: GO'); }
 
 	if ('' == feedback) {  console.log('ValidateClick() - Feedback was empty so all had GO so form is validated.'); feedback = 'Everything Looks Good!'; }
 	myConsole.innerHTML = feedback;
